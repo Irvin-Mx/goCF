@@ -4,25 +4,32 @@ import "fmt" //Imports the formatting package from Go's standard library, which 
 
 //The main function is the entry point of the program. It's where execution begins
 func main() {
-	var isHigh string // empty string "" initial value
-	var pressure int // initial value 0
-	var frequency = 32.32
-	otherVariable := true
+	
+	//Relational Operators
+	/*
+	== Equal
+	!= Not Equal
+	< less than
+	> greater than
+	<= less than or equal
+	>= greater or equal
+	*/
 
-	var temp int = 99
+	age := 19
+	
+	fmt.Println("Is age equal to 23:",age == 23)
+	fmt.Println("Is age not equal to 23:",age != 23)
+	fmt.Println("Is age less than  23:",age < 23)
+	fmt.Println("Is age greater than  23:",age > 23)
 
-	var maxTemp int
-	maxTemp = 90
-	if temp > maxTemp {
-		fmt.Println("The temperature is too high")
-	}
-	for i := 0; i < 10; i++ {
-		temp ++
-	}
-	fmt.Println(isHigh)
-	fmt.Println(pressure)
-	fmt.Println(temp)
-	fmt.Println(otherVariable)
-	fmt.Println(frequency)
-	fmt.Println("Is high:",isHigh,"Pressure:",pressure,"Temp:",temp,"Other Variable:",otherVariable,"Frequency:",frequency)
+	stage := "TD"
+
+	evaluation := stage == "TD" && 10 < 18
+	evaluation2 := stage == "TD" || 10 < 18
+	myBoolean := false
+	invertedBoolean := !myBoolean
+
+	fmt.Println(evaluation)
+	fmt.Println(evaluation2)
+	fmt.Println(invertedBoolean)
 }
