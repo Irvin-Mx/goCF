@@ -4,25 +4,21 @@ import "fmt" //Imports the formatting package from Go's standard library, which 
 
 //The main function is the entry point of the program. It's where execution begins
 func main() {
-	var isHigh string // empty string "" initial value
-	var pressure int // initial value 0
-	var frequency = 32.32
-	otherVariable := true
+	/* var productName string
+	 var productPrice float32
+	 var productSku string
+	 var productNumber int
+	*/
 
-	var temp int = 99
+	// var productName,productPrice,productSku,productNumber = "a","b","c","d"
+	// productName,productPrice,productSku,productNumber := "a","b","c","d"
+	// item1,item2,item3 := "x",1,true
 
-	var maxTemp int
-	maxTemp = 90
-	if temp > maxTemp {
-		fmt.Println("The temperature is too high")
-	}
-	for i := 0; i < 10; i++ {
-		temp ++
-	}
-	fmt.Println(isHigh)
-	fmt.Println(pressure)
-	fmt.Println(temp)
-	fmt.Println(otherVariable)
-	fmt.Println(frequency)
-	fmt.Println("Is high:",isHigh,"Pressure:",pressure,"Temp:",temp,"Other Variable:",otherVariable,"Frequency:",frequency)
+	// Variables of the same type
+	 var productName,productPrice,productSku,productNumber string
+	productName = "GoPro"
+	productPrice = "5,700"
+	productSku = "323242aa3523124s44f2"
+	productNumber = "324353"
+	fmt.Println(productName,productNumber,productPrice,productSku)
 }
