@@ -4,25 +4,25 @@ import "fmt" //Imports the formatting package from Go's standard library, which 
 
 //The main function is the entry point of the program. It's where execution begins
 func main() {
-	var isHigh string // empty string "" initial value
-	var pressure int // initial value 0
-	var frequency = 32.32
-	otherVariable := true
+	//? In Go there are many ways to manage standard input, here is one example
+	//! fmt.Scanf is limited to only one string with no spaces, consider
+	var sn int 
+	var opName string
+	var pn float32
+	var leds int
 
-	var temp int = 99
+	fmt.Print("Enter the Serial Number of the card: SN")
+	fmt.Scanf("%d", &sn) // int value, variable
 
-	var maxTemp int
-	maxTemp = 90
-	if temp > maxTemp {
-		fmt.Println("The temperature is too high")
-	}
-	for i := 0; i < 10; i++ {
-		temp ++
-	}
-	fmt.Println(isHigh)
-	fmt.Println(pressure)
-	fmt.Println(temp)
-	fmt.Println(otherVariable)
-	fmt.Println(frequency)
-	fmt.Println("Is high:",isHigh,"Pressure:",pressure,"Temp:",temp,"Other Variable:",otherVariable,"Frequency:",frequency)
+	fmt.Print("Enter the leds that light up:")
+	fmt.Scanf("%s", &leds)  // string value, variable
+
+	fmt.Print("Enter your opName")	
+	fmt.Scanf("%s", &opName)  // string value, variable
+
+	fmt.Print("Enter the pn:")
+	fmt.Scanf("%f", &pn)  // string value, variable
+
+
+	fmt.Printf("Part Number: %.2f Leds: %d opName %s SN: %d", pn,leds,opName,sn)
 }
