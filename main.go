@@ -1,28 +1,21 @@
 package main // name of our package
 
 import "fmt" //Imports the formatting package from Go's standard library, which provides functions for formatted I/O
-
+import "reflect"
 //The main function is the entry point of the program. It's where execution begins
 func main() {
-	var isHigh string // empty string "" initial value
-	var pressure int // initial value 0
-	var frequency = 32.32
-	otherVariable := true
+	// var url string = "www.someurl.com"
+	// var url = "string"
+	url := "http://www.jsonplaceholder.com/todos"
 
-	var temp int = 99
+	fmt.Println(url)
+	fmt.Println(len(url))
+	fmt.Println(url[0]) //* ASCII
 
-	var maxTemp int
-	maxTemp = 90
-	if temp > maxTemp {
-		fmt.Println("The temperature is too high")
-	}
-	for i := 0; i < 10; i++ {
-		temp ++
-	}
-	fmt.Println(isHigh)
-	fmt.Println(pressure)
-	fmt.Println(temp)
-	fmt.Println(otherVariable)
-	fmt.Println(frequency)
-	fmt.Println("Is high:",isHigh,"Pressure:",pressure,"Temp:",temp,"Other Variable:",otherVariable,"Frequency:",frequency)
+	//We use reflect package
+	fmt.Println(reflect.TypeOf(url[0]))
+
+	someCharacter := url[14]
+
+	fmt.Printf("%c\n", someCharacter)
 }
