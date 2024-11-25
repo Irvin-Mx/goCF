@@ -26,4 +26,29 @@ func main() {
 	// fmt.Println(numbers)
 	// fmt.Println(numbers2)
 
+
+	//? Arrays pt2
+
+	categories := [...]string {0:"tech",2:"furniture",5:"clothing",7:"tools",10:"garden"}
+
+	categories[10] = "zackkrl"
+
+
+	//SubArray
+	subArray := categories[0:4] // This is nothing more than a slice (Investigate)
+
+	fmt.Println(categories)
+	fmt.Println(categories[0])
+	fmt.Println(categories[1])
+	fmt.Println(categories[2])
+	fmt.Println(categories[3])
+	fmt.Println(categories[4])
+	fmt.Println(categories[5])
+	fmt.Println(categories[6])
+	fmt.Println(categories[7])
+	fmt.Println(categories[8])
+	fmt.Println(categories[9])
+	fmt.Println(categories[10])
+
+	fmt.Println(subArray)
 }
