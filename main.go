@@ -4,25 +4,26 @@ import "fmt" //Imports the formatting package from Go's standard library, which 
 
 //The main function is the entry point of the program. It's where execution begins
 func main() {
-	var isHigh string // empty string "" initial value
-	var pressure int // initial value 0
-	var frequency = 32.32
-	otherVariable := true
+	//? ARRAYS
 
-	var temp int = 99
+	// var integers[5] int // [0,0,0,0,0] initial values
 
-	var maxTemp int
-	maxTemp = 90
-	if temp > maxTemp {
-		fmt.Println("The temperature is too high")
-	}
-	for i := 0; i < 10; i++ {
-		temp ++
-	}
-	fmt.Println(isHigh)
-	fmt.Println(pressure)
-	fmt.Println(temp)
-	fmt.Println(otherVariable)
-	fmt.Println(frequency)
-	fmt.Println("Is high:",isHigh,"Pressure:",pressure,"Temp:",temp,"Other Variable:",otherVariable,"Frequency:",frequency)
+	//We can modifiy its values
+	//Has to be same type
+	// integers[0] = 100
+	// integers[1] = 200
+	// integers[2] = 300
+	// integers[3] = 400
+	// integers[4] = 500
+
+	// fmt.Println(integers)
+
+	//OTHER WAY TO CREATE ARRAYS
+
+	// numbers := [3] int {100,200,300}
+	// numbers2 := [...] int {100,200,300} // [...] Go will automatically detect the lenght
+
+	// fmt.Println(numbers)
+	// fmt.Println(numbers2)
+
 }
